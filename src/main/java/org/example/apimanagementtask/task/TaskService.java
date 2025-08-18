@@ -14,14 +14,17 @@ public class TaskService {
     }
 
     public List<Task> getAllTasks() {
+
         return repository.findAll();
     }
 
     public Task getTaskById(Long id) {
+
         return repository.findById(id).orElse(null);
     }
 
     public Task createTask(Task task) {
+
         return repository.save(task);
     }
 
