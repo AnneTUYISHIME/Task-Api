@@ -34,3 +34,6 @@ build/
 
 src/main/resources/application.properties
 
+# Ignore env files
+.env
+
